@@ -1,0 +1,41 @@
+@import "../../global.scss";
+
+.menu {
+	color: black;
+	width: 20rem;
+	height: 100vh;
+    background: linear-gradient(to right, black, grey);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	right: 0;
+	transition: 1s ease;
+	caret-color: transparent;
+	
+	ul{
+      
+	   font-size: 1.7rem;
+	   list-style-type: none;
+	   line-height: 2;
+	   width: 60%;
+	   
+		li {
+			cursor: pointer;
+			letter-spacing: .8px;
+			
+			a {
+				text-decoration: none;
+				color: white;
+				font-weight: 600;
+
+			}
+			a:hover {
+				font-weight: 800;
+				transition: 1s ease;
+			}
+		}
+	}
+}

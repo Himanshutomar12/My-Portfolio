@@ -1,0 +1,24 @@
+.app {
+	height: 100vh;
+	
+}
+
+.sections {
+	width: 100%;
+	height: calc(100vh - 6rem);
+	position: relative;
+	top: 6rem;
+	scroll-behavior: smooth;
+	
+	
+	overflow-y: scroll;
+	overflow-x: hidden;
+	// scroll-snap-type: y mandatory;
+	
+	> * {
+		width: 100vw;
+		height: calc(100vh - 6rem);
+		//scroll-snap-align: start;
+	}
+}
+	

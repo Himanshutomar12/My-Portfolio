@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+.about {
+  background: -webkit-gradient(linear, right top, left top, from(black), to(black));
+  background: linear-gradient(-90deg, black, black);
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 84%, 50% 100%, 0 82%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 84%, 50% 100%, 0 82%, 0 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  caret-color: transparent;
+}
+
+.about .down-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    margin-bottom: 30px;
+  }
+  50% {
+    margin-bottom: 18px;
+  }
+  100% {
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    margin-bottom: 30px;
+  }
+  50% {
+    margin-bottom: 18px;
+  }
+  100% {
+    margin-bottom: 30px;
+  }
+}
+
+.about .down-icon .downIcon {
+  font-size: 3.5rem;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-animation: arrow infinite;
+          animation: arrow infinite;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  color: crimson;
+}
+
+.about .left {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.6;
+}
+
+.about .left .header {
+  margin-bottom: 6rem;
+}
+
+.about .left .header p {
+  font-size: 1.5rem;
+}
+
+.about .left .header h1 {
+  font-size: 3rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+}
+
+.about .left .header span {
+  font-size: 1.8rem;
+  color: crimson;
+  margin-left: 9px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.about .left .header h2 {
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+
+.about .left .cvDiv {
+  position: relative;
+  right: 75px;
+  bottom: 50px;
+}
+
+.about .left .cvDiv a {
+  text-decoration: none;
+  margin-right: 35px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.about .left .cvDiv .cv {
+  color: white;
+  border: 2px solid white;
+  padding: 13px 27px;
+}
+
+.about .left .cvDiv .cv:hover {
+  border-color: orange;
+}
+
+.about .left .cvDiv .hireMe {
+  color: white;
+  background-color: orange;
+  padding: 14px 38px;
+}
+
+.about .left .cvDiv .hireMe:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.about .right {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .right .img img {
+  width: 105%;
+  margin-top: 6rem;
+}
+/*# sourceMappingURL=home.css.map */

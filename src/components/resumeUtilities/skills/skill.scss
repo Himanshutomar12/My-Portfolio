@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../../global.scss"; 
+.skill {
+	display: flex;
+	margin: 6rem 1rem;
+	line-height: 3;
+	font-size: 18px;
+
+	@include tablet {
+		margin: 6rem 0;
+	}
+	@include home-iphone {
+		margin: 20px 10px 0 0 ;
+	}
+	@include s-duo {
+		margin-top: 15px;
+	}
+	ul {
+		font-family: 'Source Serif 4', sans-serif;
+		font-weight: 700;
+
+		li {
+			list-style-type: none;
+			display: flex;
+			align-items: center;
+			@include resume-tab-font {
+				font-size: 25px;
+			}
+			
+			.skill-icon {
+				color: crimson;
+				position: relative;
+				margin-right: 10px;
+				font-size: 18px;
+			}
+			
+		}
+	}
+	
+	.second {
+          margin-left: 10rem;
+		 @include tablet {
+			 margin-left: 5rem;
+		 }
+	}
+}

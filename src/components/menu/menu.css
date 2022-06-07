@@ -1,0 +1,47 @@
+.menu {
+  color: black;
+  width: 20rem;
+  height: 100vh;
+  background-color: #1b0825;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  caret-color: transparent;
+}
+
+.menu ul {
+  font-size: 1.7rem;
+  list-style-type: none;
+  line-height: 2;
+  width: 60%;
+}
+
+.menu ul li {
+  cursor: pointer;
+  letter-spacing: .8px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.menu ul li a:hover {
+  font-weight: 800;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+/*# sourceMappingURL=menu.css.map */

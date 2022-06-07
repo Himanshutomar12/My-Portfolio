@@ -1,0 +1,108 @@
+
+
+
+@mixin tablet {
+	@media (max-width: 1030px){
+		@content
+		
+	}
+};
+
+ @mixin home {
+	 @media (max-width: 600px){
+		 @content
+	 }
+ };
+
+ ////s-duo///@
+ @mixin s-duo {
+	@media (width: 540px){
+		@content
+	}
+};
+
+//////iphone///
+ @mixin home-iphone {
+	@media (max-width: 420px){
+		@content
+	}
+};
+
+
+////samsung s8///
+@mixin s8 {
+	@media (max-width: 394px) {
+		@content
+	}
+};
+
+/////surface pro///
+@mixin s-pro {
+	@media (width: 912px) {
+		@content
+	}
+};
+
+////ipad-air w:820///
+@mixin i-pad {
+	@media (width: 820px) {
+		@content
+	}
+};
+
+////ipad-mini w:768
+@mixin ipad-mini {
+	@media (width: 768px) {
+		@content
+	}
+};
+////spro for resume section///
+@mixin resume-s-pro {
+	@media (max-width: 912px) {
+		@content
+	}
+};
+
+////samsung s8 for resume section/////
+@mixin resume-s8 {
+	@media (max-width: 376px) {
+		@content
+	}
+};
+
+
+@mixin resume {
+	@media (max-width: 1030px) and (min-width: 913px){
+		@content
+		
+	}
+};
+
+@mixin resume-tab-font {
+	@media (max-width: 913px) and (min-width: 819px){
+		@content
+		
+	}
+};
+
+
+//////testimonial section 359px-415px///
+@mixin testimonial {
+	@media (max-width: 524px){
+		@content
+	}
+};
+
+///contact///
+@mixin contact {
+	@media (max-width: 653px){
+		@content
+	}
+};
+
+////contact for 434px- 390px////
+@mixin android {
+	@media (max-width: 434px) {
+		@content
+	}
+};

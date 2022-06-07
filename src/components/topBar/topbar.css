@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+.top-bar {
+  background-color: black;
+  color: white;
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.top-bar .left a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-left: 9.3rem;
+  font-family: 'PT Serif', serif;
+  color: white;
+}
+
+.top-bar .right .rightContent {
+  margin: 4rem;
+  font-family: 'Source Serif 4', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.top-bar .right .rightContent span a {
+  margin: 35px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  caret-color: transparent;
+}
+
+.top-bar .right .rightContent a:hover {
+  color: grey;
+}
+
+.top-bar .right .hamburger {
+  width: 33px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 30px;
+  cursor: pointer;
+  caret-color: transparent;
+  font-family: 'Source Serif 4', sans-serif;
+}
+
+.top-bar .right .hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.top-bar.active .right .hamburger span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.top-bar.active .right .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.top-bar.active .right .hamburger span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.top-bar .sticky {
+  background-color: crimson;
+}
+/*# sourceMappingURL=topbar.css.map */

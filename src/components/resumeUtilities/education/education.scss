@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../../global.scss";
+.main {
+	display: flex;
+	margin-top: 5rem;
+	@include home-iphone {
+		margin-top: 10px;
+	}
+	@include s-duo {
+			margin-top: 5px;
+	}
+	
+	
+		.education {
+		ul {
+			margin-left: -1.5rem;
+			@include tablet {
+				margin-left: 0;
+			}
+			span {
+				margin-left: 1.9rem;
+				font-size: 14px;
+				@include resume-tab-font {
+					font-size: 16px;
+				}
+				
+			}
+			li {
+				font-weight: 650;
+				color: crimson;
+				list-style-type: none;
+				display: flex;
+				align-items: center;
+				margin-bottom: -20px;
+				padding: 12px 0;
+				font-size: 14.5px;
+				font-family: 'Source Serif 4', sans-serif;
+				@include home-iphone {
+					margin-top: 19px;
+				}
+				@include resume-tab-font {
+					font-size: 20px;
+				}
+			  .dot {
+				  position: relative;
+				  margin-right: 10px;
+				  font-size: 17px;
+			  }
+			}
+		}
+
+	}
+	.education-year {
+		@include home-iphone {
+			position: relative;
+			left: -2rem;
+		}
+		.year-list {
+		margin: 25px 0 4.4rem 7rem;
+		list-style-type: none;
+		background-color: crimson;
+		padding: 5px 8px;
+		font-size: 13px;
+		color: white;
+		border-radius: 15px;
+		text-align: center;
+		font-weight: 700;
+		@include tablet {
+			margin: 22px 0 3.8rem 30px;
+		}
+		@include resume-s8{
+		
+			font-size: 10px;
+			margin-bottom: 4.5rem;
+		}
+		
+		
+		
+		}
+	}
+}

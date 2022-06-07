@@ -1,0 +1,290 @@
+@import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+
+section {
+	
+
+	.topHeader{
+		text-align: center;
+	    font-family: 'Source Serif 4', sans-serif;
+		position: relative;
+		top: 2rem;
+		@include home-iphone {
+			top: 1rem;
+		}
+		@include s8 {
+			top: 15px;
+		}
+
+		@include s-duo {
+			top: 10px;
+			
+		}
+		
+	}
+	h1 {
+	    font-weight: 700;
+		text-align: center;
+		margin-bottom: 10px;
+		@include s-pro {
+			font-size: 3.6rem;
+			margin-top: 3rem;
+		}
+		@include s-duo {
+			font-size: 25px;
+		}
+		
+	}
+	.about-span {
+		font-weight: 600;
+		@include s-pro {
+			font-size: 25px;
+			
+		}
+	}
+	
+}
+.about-me {
+	display: flex;
+	width: calc(100vw - 29rem);
+	margin: 4rem 0 0 15rem;
+	height: calc(100vh - 16rem);
+	box-shadow: 0 1px 20px black;
+
+	@include tablet {
+		display: block;
+		background-color: white;
+		width: calc(100vw - 3rem);
+		margin: 4rem 1.5rem;
+		
+	}
+	@include home-iphone {
+			margin-top: -5px;
+	}
+	@include s8 {
+		margin-top: -20px;	
+	}
+	@include s-duo {
+		margin-top: -20px;
+	}
+	
+	
+
+	
+	
+	.left {
+		flex: 0.2;
+		background: linear-gradient(to right,black, gray,black ); 
+		@include tablet {
+			height: 300px;
+			background: white;
+		}
+
+		.image {
+
+			
+		img {
+			width: 20rem;
+			margin: 3rem 5rem;
+			position: relative;
+			bottom: 11.45rem;	
+			border-radius: 100px;
+			caret-color: transparent;
+			@include tablet {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				top: 1rem;
+				
+			}
+			@include home-iphone {
+				width: 40%;
+			}
+			@include s8 {
+				top: .5rem;	
+			}
+			@include s-duo {
+				width: 30%;
+			}
+			@include ipad-mini {
+				width: 40%;
+			}
+
+		}
+			
+
+		}
+	}
+
+	.right {
+		flex: 0.8;
+		padding-left: 30px;
+		background-color: white;
+		
+		@include tablet {
+			margin-top: 5rem;
+			text-align: center;
+			
+		}
+
+		@include home-iphone {
+			margin-top: -9rem;
+		}
+		@include s8 {
+			margin-top: -11rem;	
+		}
+		@include s-duo {
+			margin-top: -10rem;
+		}
+		@include ipad-mini {
+			margin-top: -1rem;
+		}
+
+		.myself {
+			letter-spacing: .5px;
+			line-height: 1.5;
+
+			@include tablet {
+				letter-spacing: .8px;
+				font-size: 10px;
+			}
+		
+			
+
+			p {
+				font-size: .9rem;
+				margin: 3.5rem 2rem 2.5rem 0;
+				@include tablet {
+						font-size: 18px;
+						font-style: italic;
+						margin-bottom: 1.5rem;
+				}
+				@include home-iphone {
+					font-size: 15px;
+				
+					margin: 25px 2px 8px -26px;
+				}
+				@include s8 {
+					font-size: 12px;
+				}
+				@include s-pro {
+					font-size: 23px;
+				}
+				@include s-duo {
+					font-size: 13px;
+				}
+				
+			}
+
+			h2 {
+				font-weight: 600;
+				
+				@include home-iphone {
+					font-size: 20px;
+					margin-left: -20px;
+				}
+				@include s-pro {
+					font-size: 30px;
+					margin-top: 3rem;
+				}
+				@include s-duo {
+					font-size: 19px;
+					margin-top: -10px;
+				}
+				
+			}
+
+			ul {
+				padding: 10px 0 2rem  0;
+				list-style-type: none;
+				@include s-duo {
+					margin-top: -10px;
+					margin-left: -15px;
+				}
+
+				li {
+					font-size: .9rem;
+					@include tablet {
+						font-size: 17px;
+ 					}
+					@include home-iphone {
+						font-size: 15px;
+						display: block;
+					    margin-left: -28px;
+					}
+					@include s8 {
+						font-size: 11px;
+					}
+					@include s-pro {
+						font-size: 20px;
+						
+					}
+					@include s-duo {
+						font-size: 13px;
+					}
+					
+					&::before {
+						content: "\2022";
+						color: black;
+						font-weight: 700;
+						display: inline-block;
+						width: 1em;
+						
+					}
+				}
+			}
+
+			a {
+				text-decoration: none;
+				padding: 10px 20px;
+				border-radius: 20px;
+				color: crimson;
+				border: 2px solid black;
+				transition: .25s ease;
+				font-weight: 500;
+				font-size: 13px;
+				caret-color: transparent;
+				font-weight: 600;
+
+				@include tablet {
+				  padding: 13px 22px;
+				  font-size: 16px;
+				  position: relative;
+				 bottom: 1rem;
+				}
+				@include home-iphone {
+					padding: 8px 15px;
+					font-size: 14px;
+					margin-left: -20px;
+				}
+				@include s-pro {
+					font-size: 18px;
+					
+				}
+				@include s8 {
+					font-size: 10px;
+					padding: 5px 10px;
+				}
+				@include ipad-mini {
+					padding: 10px 15px;
+					position: relative;
+					top: -20px;
+				}
+				@include s-duo {
+					font-size: 12px;
+					padding: 5px 13px;
+					margin-left: -10px;
+				}
+			
+			}
+
+			a:hover {
+				
+				border: 2px solid crimson;
+
+			}
+		}
+	}
+
+}

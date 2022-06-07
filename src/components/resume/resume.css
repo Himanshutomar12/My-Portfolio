@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+#resumeSection .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#resumeSection .hr hr {
+  border-top: 5px dotted #000;
+  background-color: transparent;
+  width: 30px;
+}
+
+#resumeSection .header {
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  font-family: 'Source Serif 4', sans-serif;
+  top: 4rem;
+}
+
+#resumeSection .header span {
+  font-weight: 600;
+}
+
+#resumeSection .resume {
+  width: calc(100vw - 28rem);
+  margin: 5rem 0 0 13rem;
+  height: calc(100vh - 18rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#resumeSection .resume .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+#resumeSection .resume .left .resume-left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 340px;
+  -webkit-box-shadow: 12px 0 8px -9px black;
+          box-shadow: 12px 0 8px -9px black;
+  height: 280px;
+  margin-top: 100px;
+}
+
+#resumeSection .resume .left .resume-left-content .resume-icons {
+  background-color: black;
+  border-radius: 3px;
+  position: relative;
+  right: -1px;
+}
+
+#resumeSection .resume .left .resume-left-content .resume-icons span {
+  display: inline-block;
+  padding: 22px 10px;
+  color: white;
+  font-size: 10px;
+}
+
+#resumeSection .resume .left .resume-left-content .resume-buttons span {
+  display: inline-block;
+  margin: 8px;
+  margin-left: -1px;
+  font-weight: 600;
+  cursor: pointer;
+  caret-color: transparent;
+  padding: 11px 10px;
+  border-start-end-radius: 12px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, black)) right;
+  background: linear-gradient(to left, transparent 50%, black 50%) right;
+  background-size: 200%;
+  -webkit-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+#resumeSection .resume .left .resume-left-content .resume-buttons .active {
+  width: 175px;
+  background-position: left;
+  color: white;
+}
+
+#resumeSection .right {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+}
+
+#resumeSection .right .resumeContent {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#resumeSection .right .resumeContent .education {
+  line-height: 3;
+}
+
+#resumeSection .right .resumeContent .workHistory {
+  line-height: 3;
+}
+/*# sourceMappingURL=resume.css.map */

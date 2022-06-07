@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6rem 1rem;
+  line-height: 3;
+  font-size: 18px;
+}
+
+.skill ul {
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: 700;
+}
+
+.skill ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill ul li .skill-icon {
+  color: crimson;
+  position: relative;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.skill .second {
+  margin-left: 10rem;
+}
+/*# sourceMappingURL=skill.css.map */

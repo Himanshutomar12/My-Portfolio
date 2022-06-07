@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+section .topHeader {
+  text-align: center;
+  font-family: 'Source Serif 4', sans-serif;
+  position: relative;
+  top: 2rem;
+}
+
+section h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section .about-span {
+  font-weight: 600;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100vw - 29rem);
+  margin: 4rem 0 0 15rem;
+  height: calc(100vh - 16rem);
+  -webkit-box-shadow: 0 1px 20px black;
+          box-shadow: 0 1px 20px black;
+  background-color: white;
+}
+
+@media (max-width: 1170px) {
+  .about-me {
+    width: calc(100vw - 4rem);
+    margin: 2rem 3rem 0 2rem;
+  }
+}
+
+.about-me .left {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  background: -webkit-gradient(linear, left top, right top, from(#494848), color-stop(white), to(#494848));
+  background: linear-gradient(to right, #494848, white, #494848);
+}
+
+.about-me .left img {
+  width: 20rem;
+  margin: 3rem 5rem;
+  position: relative;
+  bottom: 11.45rem;
+  border-radius: 100px;
+  caret-color: transparent;
+}
+
+.about-me .right {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  margin-left: 30px;
+}
+
+@media (max-width: 1170px) {
+  .about-me .right {
+    margin: 0 15px 0 20px;
+  }
+}
+
+.about-me .right .myself {
+  letter-spacing: .5px;
+  line-height: 1.5;
+}
+
+.about-me .right .myself p {
+  font-size: .9rem;
+  margin: 3.5rem 2rem 2.5rem 0;
+}
+
+.about-me .right .myself h2 {
+  font-weight: normal;
+}
+
+.about-me .right .myself ul {
+  padding: 10px 0 2rem  0;
+  list-style-type: none;
+}
+
+.about-me .right .myself ul li {
+  font-size: .9rem;
+}
+
+.about-me .right .myself ul li::before {
+  content: "\2022";
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  width: 1em;
+}
+
+.about-me .right .myself a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: crimson;
+  border: 2px solid black;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+  font-weight: 500;
+  font-size: 13px;
+  caret-color: transparent;
+  font-weight: 600;
+}
+
+.about-me .right .myself a:hover {
+  border: 2px solid crimson;
+}
+/*# sourceMappingURL=aboutme.css.map */

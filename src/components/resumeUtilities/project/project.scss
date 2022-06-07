@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../../global.scss";
+.project {
+	display: flex;
+	margin: 3.5rem 0 0 .8rem;
+	@include home-iphone {
+		margin: -16px 5px 0 11.5rem;
+	}
+	@include resume-s8 {
+		margin-left: 13.5rem;
+		
+	}
+	@include s-duo {
+			margin: -10px 0 0 3.5rem;
+	}
+	ul{
+		font-size: 15px;
+		li {
+			list-style-type: none;
+			font-family: 'Source Serif 4', sans-serif;
+            color: crimson;
+			font-weight: 700;
+			display: flex;
+			align-items: center;
+			margin-top: 35px;
+			line-height: 2;
+			
+			.project-icon {
+				font-size: 16px;
+				position: relative;
+				margin-right: 8px;
+			}
+		}
+	}
+	.first {
+        width: 450px;
+		ul {
+			li {
+				margin-left: -1.5rem;
+				@include resume-tab-font {
+					font-size: 20px;
+				}
+			}
+			span {
+				font-size: 14px;
+				@include resume-s8 {
+					font-size: 12px;
+				}
+				@include resume-tab-font {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	
+	.second {
+		ul {
+			li {
+				margin: 65px 0 4rem 3rem;
+				padding: 1px 18px;
+				border-radius: 15px;
+				background-color: crimson;
+				color: white;
+				@include s-duo {
+					position: relative;
+					left: -4rem;
+				}
+				@include resume-tab-font {
+					margin-top: 80px;
+					font-size: 20px;
+					
+				}
+			
+				
+			}
+		}
+	}
+}

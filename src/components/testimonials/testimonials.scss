@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../global.scss";
+
+#testimonials {
+	@include resume-s8 {
+		margin-top: 13rem;
+	}
+	@include s-duo {
+			margin-top: 14rem;
+	}
+	@include testimonial {
+		margin-bottom: 16rem;
+	}
+	
+	.hr {
+		display: flex;
+		justify-content: center;
+        text-align: center;
+	 hr {
+		border-top: 5px dotted #000;
+		background-color: transparent;
+		width: 30px;
+		@include home-iphone {
+			margin-top: 3rem;
+		}
+		@include s8 {
+			position: relative;
+			top: 40px;
+		}
+	 }
+	}
+	.top {
+		font-family: 'Source Serif 4', sans-serif;	
+		position: relative;
+		top: 2rem;
+		text-align: center;
+		
+		.topSpan {
+			font-weight: 600;
+			
+		}		
+	
+ 
+}
+.testimonials {
+	
+	background: linear-gradient(to left,rgb(85, 84, 84), transparent,  rgb(85, 84, 84) ) ;
+    border-top-right-radius: 55px;
+	border-top-left-radius: 55px;
+	border-bottom-right-radius: 55px;   
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+	padding: 90px 0 50px 0;
+	min-height: 450px;
+
+	@include tablet{
+		display: flex;
+		justify-content: space-evenly;
+		padding: 20px 30px 370px;
+		position: relative;
+		margin: 4rem 1rem;
+		
+	}
+	@include testimonial {
+		position: relative;
+		padding-bottom: 640px;
+		border-top-left-radius: 25px;
+		border-bottom-right-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+   
+	#second-box {
+		@include tablet {
+			position: absolute;
+			bottom: 2rem;
+			width: 37%;
+		}
+		@include testimonial {
+		   width: 74%;
+		   bottom: 1rem;
+		}
+	
+	}
+
+	#third-box {
+		@include testimonial {
+		position: absolute;
+		top: 20.6rem;
+		width: 74%;
+		}
+	}
+
+  .box {
+    min-height: 290px;
+	width: 23%;
+	border-top-left-radius: 55px;
+	border-bottom-right-radius: 55px;
+	border-top-right-radius: 55px;
+	border-bottom-left-radius: 0;
+	border: 2px solid rgb(41, 40, 40);
+	transition: .1s ease;
+	margin: 15px;
+	transition: .4s ease;
+	&:hover {
+		border: 4px solid black;
+		p {
+			font-style: italic;
+		}
+	}
+	
+	@include tablet {
+		width: 40%;
+		margin-top: 3rem;
+		
+	}
+	@include testimonial {
+		margin-top: 5px;
+		width: 90%;
+		border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	}
+	@include s-duo {
+		height: 80px;
+		width: 100%;
+	}
+	
+	
+	p {
+		margin: 40px 0 50px 15px;
+		line-height: 2;
+		letter-spacing: .8px;
+		font-size: 16px;
+		@include s-duo {
+			font-size: 13px;
+		}
+	
+	}
+	span {
+		margin-left: 40px ;
+		@include s-duo {
+			font-size: 15px;
+		}
+	}
+	
+  }
+}
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../../global.scss";
+.interest {
+	margin: 6rem 2rem 0 1rem;
+
+	@include tablet {
+		margin: 4.5rem -4rem 0 1rem;
+	}
+	@include resume-s-pro {
+		margin: 4rem 8rem;
+	}
+
+	@include home-iphone {
+		margin: -22px 0;
+		
+	}
+	@include s-duo {
+		margin: -10px 0;
+	}
+
+	span {
+		font-size: 14px;
+		letter-spacing: .6px;
+		@include resume-tab-font {
+			font-size: 18px;
+		}
+	}
+	ul {
+		li {
+			list-style-type: none;
+			font-size: 15px;
+			display: flex;
+			align-items: center;
+			margin: 40px 0 0 -1.55rem;
+			font-family: 'Source Serif 4', sans-serif;
+            color: crimson;
+			font-weight: 700;
+			@include home-iphone {
+				margin-top: 32px;
+			}
+			@include resume-tab-font {
+				font-size: 20px;
+			}
+			.interest-icon {
+               font-size: 17px;
+			   margin-right: 7px;
+
+			}
+		
+		}
+	}
+}

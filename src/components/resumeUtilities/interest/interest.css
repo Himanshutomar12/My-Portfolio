@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+.interest {
+  margin: 6rem 2rem 0 1rem;
+}
+
+.interest span {
+  font-size: 14px;
+  letter-spacing: .6px;
+}
+
+.interest ul li {
+  list-style-type: none;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0 0 -1.55rem;
+  font-family: 'Source Serif 4', sans-serif;
+  color: crimson;
+  font-weight: 700;
+}
+
+.interest ul li .interest-icon {
+  font-size: 17px;
+  margin-right: 7px;
+}
+/*# sourceMappingURL=interest.css.map */

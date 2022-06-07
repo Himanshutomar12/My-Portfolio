@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../global.scss";
+
+#resumeSection{
+	
+	.hr {
+		display: flex;
+		justify-content: center;
+        text-align: center;
+	 hr {
+		border-top: 5px dotted #000;
+		background-color: transparent;
+		width: 30px;
+		
+	}
+}
+	.header {
+		text-align: center;
+		// margin-top: 3rem;
+		position: relative;
+		font-weight: 700;
+		font-family: 'Source Serif 4', sans-serif;
+		top: 4rem;
+		span {
+			font-weight: 600;
+
+		}
+		@include home-iphone {
+			top: 1rem;
+		}
+		@include ipad-mini {
+			top: -1px;
+		}
+		@include resume {
+			top: 15rem;
+		}
+		@include s-duo {
+			top: 2px;
+		}
+	
+	}
+
+	
+	.resume {
+    width: calc(100vw - 28rem);
+	margin: 5rem 0 0 13rem;
+	height: calc(100vh - 18rem);
+    // box-shadow: 0 1px 20px black;
+	display: flex;
+
+	@include tablet {
+		height: 560px;
+		width: calc(100vw - 3rem);
+		margin: 10rem 1.5rem 0;
+	}
+	@include resume-s-pro {
+		display: initial;
+		font-size: 18px;
+	}
+	@include ipad-mini {
+		position: relative;
+		top: -5rem;
+	}
+	@include s-duo {
+		position: relative;
+		top: -6rem;
+	}
+	
+	.left {
+		display: flex;
+		justify-content: center;
+		flex: 0.4;
+		@include tablet {
+			flex: .2;
+		}
+		@include home-iphone {
+			margin-top: -5.6rem;
+		}
+	
+		
+		.resume-left-content{
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    flex-direction: row;
+			width: 340px;
+			box-shadow: 12px 0 8px -9px black;
+			height: 280px;
+			margin-top: 100px;
+			@include tablet {
+				margin-left: -20px;
+			}
+			@include resume-s-pro {
+				width: 400px;
+				height: 350px;
+				box-shadow: 0 8px 6px -6px black;
+			}
+			@include home-iphone {
+				width: 330px;
+				height: 300px;
+			}
+			
+		
+		.resume-icons {
+			background-color: black;
+	        border-radius: 3px;
+			position: relative;
+			right: -1px;
+			
+		span {
+			display: inline-block;	
+			padding: 22px 10px;
+			color: white;
+			font-size: 10px;
+			@include resume-s-pro {
+				padding: 23px 11px;
+				font-size: 13px;
+			}
+			@include home-iphone {
+				padding: 20px 10px;
+				font-size: 10px;
+			}
+			
+		}
+		
+	} 
+
+		.resume-buttons {
+          span {
+			display: inline-block;	
+			margin: 8px;
+			margin-left: -1px;
+			font-weight: 600;
+			cursor: pointer;
+			caret-color: transparent;
+			padding: 11px 10px;
+			
+			border-start-end-radius: 12px;
+			background: linear-gradient(to left, transparent 50%, black 50%)right;
+            background-size: 200%;
+            transition: .5s ease-out;  
+			
+			}
+			@include home-iphone{
+				font-size: 12px;
+			}
+			.active {
+				width: 175px;
+				background-position: left;
+				color: white;
+				@include tablet {
+					width: 173px;
+				}
+			
+				@include resume-s-pro {
+					width: 200px;
+				}
+				@include home-iphone {
+					width: 170px;
+				}
+				@include s-duo {
+			        width: 190px;
+				}
+			}
+		  }
+		
+		 
+		}
+	}
+	}
+	
+	.right {
+		flex: 0.8;
+		@include tablet {
+			flex: .7;
+			
+		}
+		@include resume-s-pro {
+			display: flex;
+			justify-content: center;
+		}
+				
+		.resumeContent{
+			transition: 1s ease;
+		.education {
+            line-height: 3;
+			@include tablet {
+				line-height: 2.3;
+			}
+			@include home-iphone {
+				line-height: 1.8;
+			}
+		}
+		.workHistory {
+            line-height: 3;
+		}
+	}
+	
+}
+}
+
+		
+

@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import "../../global.scss";
+.about {
+  background: linear-gradient(-90deg, black, black);
+  clip-path: polygon(50% 0%, 100% 0, 100% 84%, 50% 100%, 0 82%, 0 0);
+  display: flex;
+  color: white;
+  caret-color: transparent;
+  @include tablet {
+    clip-path: polygon(51% 100%, 100% 85%, 100% 0, 0 0, 0 85%);
+  }
+  // @include home {
+  //   display: initial;
+  // }
+
+  .down-icon {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    @include tablet {
+      margin-left: -6rem;
+    }
+    @include home {
+     margin-right: -4.5rem;
+    
+    }
+    @include s-pro {
+      position: relative;
+      right: -2.6rem;
+    }
+    @include i-pad {
+      position: relative;
+      right: -2.5rem;
+    }
+    @include ipad-mini {
+      position: relative;
+      right: -2.5rem;
+    }
+
+    @keyframes arrow {
+      0% {
+        margin-bottom: 30px;
+      }
+      50% {
+        margin-bottom: 18px;
+      }
+      100% {
+        margin-bottom: 30px;
+      }
+    }
+
+    .downIcon {
+      font-size: 3.5rem;
+      font-weight: normal;
+      cursor: pointer;
+      animation: arrow infinite;
+      animation-duration: 1.2s;
+      color: crimson;
+    }
+  }
+
+  .left {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.6;
+    @include tablet {
+      margin-left: 2rem;
+      margin-top: -5rem;
+    }
+   @include home {
+     position: relative; 
+     text-align: center;
+     left: 5rem;
+     top: 11rem;
+   }
+   @include home-iphone {
+     left: 3rem;
+   }
+    .header {
+      margin-bottom: 6rem;
+
+      p {
+        font-size: 1.5rem;
+        @include home {
+          font-size: 15px;
+          
+        }
+        @include home-iphone {
+          font-size: 25px;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-family: "Mochiy Pop P One", sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: normal;
+        @include home {
+          font-size: 17px;
+          margin-bottom: -10px;
+        }
+        @include home-iphone {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+
+      span {
+        font-size: 1.8rem;
+        color: crimson;
+        margin-left: 9px;
+        transition: 1s ease;
+        @include home {
+          font-size: 20px;
+         
+        }
+        @include home-iphone {
+          font-size: 27px;
+          
+        }
+        @include s8 {
+          font-size: 24px;
+        }
+      }
+
+      h2 {
+        font-weight: normal;
+        font-size: 1.8rem;
+      }
+    }
+    .cvDiv {
+      position: relative;
+      right: 75px;
+      bottom: 50px;
+     
+      @include tablet {
+        margin-left: -9.5rem;
+        margin-top: 2rem;
+      }
+      @include home {
+      position: relative;
+      left: 5rem;
+      bottom: 90px;
+      
+      }
+      @include home-iphone {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding-top: 1rem;
+       
+      }
+      
+      a {
+        text-decoration: none;
+        margin-right: 35px;
+        font-size: 12px;
+        border-radius: 20px;
+        font-weight: 600;
+        transition: 0.25s ease;
+
+        @include tablet {
+          margin: 50px;
+        }
+        @include home {
+          margin: 25px;
+        }
+        @include home-iphone {
+          font-size: 17px;
+         
+        }
+        @include s8 {
+          font-size: 12px;
+          margin-top: -2rem;
+        }
+       
+      }
+
+      .cv {
+        color: white;
+        border: 2px solid white;
+        padding: 13px 27px;
+
+        @include tablet {
+          padding: 17px 31px;
+          display: block;
+        }
+        @include home {
+          padding: 8px 16px;
+        
+        }
+        @include home-iphone {
+          padding: 10px 21px;
+         
+        }
+        @include s8 {
+          padding: 7px 17px;
+          margin-right: -5px;
+          margin-left: 70px;
+        }
+
+        &:hover {
+          border-color: orange;
+        }
+      }
+      .hireMe {
+        color: white;
+        background-color: orange;
+        padding: 14px 38px;
+        @include tablet {
+          padding: 21px 45px;
+
+        }
+        @include home {
+          padding: 12px 32px;
+        
+        }
+        @include home-iphone {
+          padding: 10px 39px;
+         
+        }
+        @include s8 {
+          padding: 9px 30px;
+          margin-left: -30px;
+        }
+
+        &:hover {
+          background-color: white;
+          color: crimson;
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include home {
+      position: absolute;
+      flex: 0;
+      top: -4rem;
+      left: 10.5rem;
+    }
+
+    @include tablet {
+      flex: 0.45;
+      margin-bottom: 14rem;
+    }
+
+ 
+    .img {
+      img {
+        width: 105%;
+        margin-top: 6rem;
+        @include home {
+          width: 55%;
+        }
+        @include home-iphone {
+          width: 100%;
+          margin-left: -5rem;
+        }
+      }
+    }
+  }
+}

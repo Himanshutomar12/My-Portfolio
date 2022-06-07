@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import TopBar from "./components/topBar/TopBar";
+import Resume from "./components/resume/Resume";
+import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
+import Home from "./components/home/Home";
+import Menu from "./components/menu/Menu";
+import Aboutme from "./components/aboutme/Aboutme";
+import React, { useState, useEffect } from "react";
 
+import "./app.scss";
+
+ 
 function App() {
+ 
+  const [isActive, setIsActive] = useState(false);
+  
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <TopBar isActive={isActive} setIsActive={setIsActive}/>
+    <Menu isActive={isActive} setIsActive={setIsActive} />
+    <div className="sections">
+   
+    <Home /> 
+    <Aboutme/>                                 
+    <Resume />
+    <Testimonials />
+    <Contact />
+       
+    
+       </div>
+   
     </div>
   );
 }

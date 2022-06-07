@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+@import "../../../global.scss";
+
+.work {
+	margin: 6rem 2rem 0 1rem;
+	@include tablet {
+		margin: 4.5rem -5rem 0 1rem;
+	}
+	@include resume-s-pro {
+		margin: 5rem 7rem;
+	}
+	@include home-iphone {
+		margin: 17px 0;
+	}
+	@include s-duo {
+		margin: 15px 0;
+	}
+	.head {
+		margin-left: -.6rem;
+		display: flex;
+		align-items: center;
+		@include tablet {
+			margin-left: 10px;
+		}
+	.recordIcon {	
+		font-size: 18px;
+		margin-right: 10px;
+		color: crimson;
+	
+	}
+	span {
+		font-family: 'Source Serif 4', sans-serif;
+        color: crimson;
+		font-weight: 600;
+		@include resume-tab-font {
+			font-size: 22px;
+		}
+		
+	}
+}
+	
+	ul {
+		li {
+			margin: 30px 16px 0 -1rem;
+			line-height: 1.8;
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+			font-size: 14px;
+			letter-spacing: .5px;
+			@include resume-tab-font {
+				font-size: 18px;
+			}
+			.work-icon {
+				position: relative;
+				right: 10px;
+				top: 7px;
+				font-size: 15px;
+				
+			}
+		}
+	}
+}

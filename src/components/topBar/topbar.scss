@@ -1,0 +1,115 @@
+@import "../../global.scss";
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap");
+
+.top-bar {
+  background-color: black;
+  color: white;
+  height: 6rem;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1s ease;
+
+  .left a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-left: 9.3rem;
+    font-family: "PT Serif", serif;
+    color: white;
+
+    @include tablet {
+      margin-left: 5.5rem;
+    }
+    @include home {
+      font-size: 2.5rem;
+      margin-left: 4rem;
+    }
+    @include s8 {
+      margin-left: 2rem;
+    }
+  }
+
+  .right {
+    .rightContent {
+      margin: 4rem;
+      font-family: "Source Serif 4", sans-serif;
+      letter-spacing: 1px;
+      font-weight: 600;
+
+      span a {
+        margin: 35px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        caret-color: transparent;
+      }
+
+      a:hover {
+        color: grey;
+      }
+    }
+
+    .hamburger {
+      width: 33px;
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-right: 30px;
+      cursor: pointer;
+      caret-color: transparent;
+      font-family: "Source Serif 4", sans-serif;
+      @include tablet {
+        width: 45px;
+        height: 37px;
+        margin-right: 40px;
+      }
+      @include home {
+        width: 36px;
+        height: 28px;
+      }
+      @include s8 {
+        margin-right: 20px;
+      }
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transform-origin: left;
+        transition: 1s ease;
+      }
+    }
+  }
+
+  &.active {
+    .right {
+      .hamburger {
+        span {
+          &:first-child {
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:last-child {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  .sticky {
+    background-color: crimson;
+  }
+}
